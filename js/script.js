@@ -60,7 +60,10 @@ for(let i = 0; i < teamMembers.length; i++){
     for(let key in member) {
         console.log(member[key])
     }
+    // MILESTONE 2:
+        // Stampare le stesse informazioni su DOM sotto forma di stringhe
+    const name = member.name
+    const role = member.role
+    const thumb = member.thumb
+    document.getElementById('team-members').innerHTML += `<div> ${name},  ${role},  ${thumb} </div>` 
 }
-
-// MILESTONE 2:
-    // Stampare le stesse informazioni su DOM sotto forma di stringhe
