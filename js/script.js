@@ -1,4 +1,4 @@
-console.log('Attilio Caja');
+//console.log('Attilio Caja');
 
 // Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membri del team.
 // Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
@@ -49,10 +49,18 @@ const teamMembers = [
     },
 ]
 
-console.log(teamMembers) 
+//console.log(teamMembers) 
 
 // MILESTONE 1:
 // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto (in questo fase 
 //     usiamo il ciclo for…in )
+
+for(let i = 0; i < teamMembers.length; i++){
+    let member = teamMembers[i]
+    for(let key in member) {
+        console.log(member[key])
+    }
+}
+
 // MILESTONE 2:
     // Stampare le stesse informazioni su DOM sotto forma di stringhe
