@@ -65,9 +65,14 @@ for(let i = 0; i < teamMembers.length; i++){
     const name = member.name
     const role = member.role
     const thumb = member.thumb
-    document.getElementById('team-members').innerHTML += `<div> ${name},  ${role} </div>` 
+
+    const memberInfo = document.createElement('div')
+    memberInfo.classList.add('member')
+    memberInfo.innerHTML += `<div> ${name},  ${role} </div>` 
+    document.getElementById('team-members').appendChild(memberInfo)
+  
 
     let imgThumb = document.createElement('img')
     imgThumb.src = thumb
-    document.getElementById('team-members').appendChild(imgThumb) 
+    memberInfo.appendChild(imgThumb)
 }
